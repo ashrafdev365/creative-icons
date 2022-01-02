@@ -4,3 +4,150 @@
 @import "../../utils/mixins/button";
 @import "../../utils/mixins/flex";
 
+nav {
+  width: $width-xl;
+  @include flex($content: space-between);
+  margin: 0px auto 80px;
+  height: 80px;
+
+  .logo {
+    img {
+      width: 50px;
+      margin-right: 10px;
+    }
+    h1 {
+      font-size: 30px;
+      text-transform: uppercase;
+    }
+    @include flex($content: space-between);
+  }
+  ul {
+    a {
+      margin: 0px 20px;
+      font-weight: bold;
+    }
+  }
+  button {
+    @include button;
+  }
+}
+
+header {
+  width: $width-xl;
+  @include flex($content: space-evenly);
+  margin: 0px auto;
+
+  h1 {
+    line-height: 70px;
+  }
+  p {
+    width: 420px;
+    word-break: break-all;
+    margin: 10px 0px 60px;
+    // font-size: $pera-xl;
+  }
+  button {
+    @include button;
+  }
+  .hero {
+    position: relative;
+    img {
+      width: 610px;
+      height: 550px;
+    }
+    div {
+      position: absolute;
+      z-index: -1;
+      top: 40px;
+      left: 50px;
+      width: 510px;
+      height: 450px;
+      background: #923dff;
+      filter: blur(5px);
+    }
+  }
+}
+
+article {
+  width: $width-xl;
+  @include flex($content: space-between, $direc: column);
+  margin: 150px auto;
+  text-align: center;
+  p {
+    width: 800px;
+    margin: 10px 0px 40px;
+  }
+  h2 {
+    font-size: 38px;
+
+    span {
+      color: $blue;
+    }
+  }
+}
+
+main {
+  width: $width-lg;
+  margin: 0px auto;
+  text-align: center;
+  .aouther {
+    @include flex();
+    text-align: start;
+    margin-top: 100px;
+    img {
+      margin-right: 40px;
+    }
+    p {
+      width: 400px;
+      word-break: break-all;
+      margin: 8px 0px 50px;
+    }
+    h2 {
+      font-size: 38px;
+      span {
+        color: $blue;
+      }
+    }
+    button {
+      @include button;
+    }
+  }
+}
+
+footer {
+  width: $width-xl;
+  height: 100px;
+  @include flex($content: space-between);
+  margin: 200px auto 20px;
+  background-color: $blue;
+  border-radius: 6px;
+  padding: 0px 50px;
+
+  .footer_logo {
+    @include flex($content: space-between);
+    img {
+      width: 60px;
+      box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.356);
+      margin-right: 10px;
+    }
+    h1 {
+      font-size: 30px;
+      color: $white;
+    }
+  }
+  ul {
+    a {
+      margin: 0px 20px;
+      color: $white;
+      font-weight: bold;
+    }
+  }
+
+  .social {
+    a {
+      margin: 0px 15px;
+      color: $white;
+      font-size: 1.6rem;
+    }
+  }
+}

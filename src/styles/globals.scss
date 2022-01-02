@@ -9,7 +9,7 @@
 }
 body {
   overflow-x: hidden;
-  background: #111111;
+  // background: #111111;
 }
 a {
   color: black;
@@ -21,14 +21,10 @@ button {
 }
 h1 {
   font-size: $heading-xl;
-  font-family: "Fredoka One", cursive;
   span {
-    font-family: "Fredoka One", cursive;
-    color: #4e4aff;
+    color: #923DFF;
   }
 }
-
-
 
 @media screen and (max-width: 1050px) {
   p,

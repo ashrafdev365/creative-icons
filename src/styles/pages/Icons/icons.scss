@@ -1,0 +1,47 @@
+@import "../../utils/varialbles/fonts";
+@import "../../utils/varialbles/width";
+@import "../../utils/varialbles/colors";
+@import "../../utils/mixins/button";
+@import "../../utils/mixins/flex";
+
+.search {
+  margin: 0px auto;
+  width: 580px;
+  position: relative;
+  margin-bottom: 100px;
+  input {
+    border: 2px solid rgba(0, 0, 0, 0.151);
+    padding: 9px 40px;
+    font-size: 18px;
+    border-radius: 4px;
+    width: 100%;
+    // outline: 2px solid $blue;
+  }
+  i {
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.329);
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+}
+
+.icons_section {
+  width: $width-xl;
+  margin: 0px auto 80px;
+  @include flex($wrap: wrap);
+  //   border: 1px solid rgba(0, 0, 0, 0.247);
+  .icon_box {
+    width: 120px;
+    height: 100px;
+    margin: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    @include flex();
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}
+
+.icons {
+  width: 30px;
+}

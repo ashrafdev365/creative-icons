@@ -1,0 +1,71 @@
+.search {
+  margin: 0px auto;
+  width: 580px;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.search input {
+  border: 2px solid rgba(0, 0, 0, 0.151);
+  padding: 9px 40px;
+  font-size: 18px;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.search i {
+  font-size: 1.3rem;
+  color: rgba(0, 0, 0, 0.329);
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.icons_section {
+  width: 1450px;
+  margin: 0px auto 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.icons_section .icon_box {
+  width: 120px;
+  height: 100px;
+  margin: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.11);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.icons {
+  width: 30px;
+}
+/*# sourceMappingURL=icons.css.map */
